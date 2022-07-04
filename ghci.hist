@@ -1,0 +1,35 @@
+:q
+putStrLn it
+putSutLn it
+putStrln  it
+putStrln  it
+[ 'あ' .. 'ん']
+putStrln  it
+['あ' | 'ん']
+['あ' | 'ん']
+mylength ['a' .. 'z']
+:r
+mylength ['a' .. 'z']
+mylength ['a' .. 'z']
+mylength ['a' .. 'z']
+:r
+[ 1| _<- [1 .. 5] ]
+myconcat [[1,2,3],[4,5],[6,7,8,9]]
+:l src/First.hs
+l src/First.hs
+l src/
+[ (x,y) | y <- [4,5],x  <- "abc"]
+[ (x,y) | y <- [4,5], <- "abc"]
+[ (x,y) | y <- [4,5], <- "abc"
+[ (x ,y) | x <- "abc" ,y <- [4,5] ]
+[ (x ,y) | x <- "abc" ,y <- [4,5]
+[ x `divMod` 2 | x <- [1 .. 5] ]
+[ x `divMod` 2 | x < [1 .. 5] ]
+[ x `div` 2 | x < [1 .. 5] ]
+[ x * 2 | x <- [1 .. 5] ]
+map (^2) [1..5]
+[ x ^ 2 | x <- [1 .. 5] ]
+:q
+putStrLn it
+['あ' .. 'ん']
+:q

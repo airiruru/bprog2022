@@ -375,3 +375,644 @@ Ok, one module loaded.
 2022-06-16 16:14:56.250198916
 >>> :q
 Leaving GHCi.
+GHCi, version 9.0.2: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/airi/bprog2022/.ghci
+2022-07-04 12:03:00.187431647
+>>> :q
+Leaving GHCi.
+GHCi, version 9.0.2: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/airi/bprog2022/.ghci
+2022-07-04 12:32:47.565946489
+>>> GHCi, version 9.0.2: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/airi/bprog2022/.ghci
+2022-07-04 12:33:39.563443382
+>>> :t Num
+
+<interactive>:1:1: error:
+    • Data constructor not in scope: Num
+    • Perhaps you meant variable ‘sum’ (imported from Prelude)
+2022-07-04 12:34:00.869942646
+>>> :i Num
+type Num :: * -> Constraint
+class Num a where
+  (+) :: a -> a -> a
+  (-) :: a -> a -> a
+  (*) :: a -> a -> a
+  negate :: a -> a
+  abs :: a -> a
+  signum :: a -> a
+  fromInteger :: Integer -> a
+  {-# MINIMAL (+), (*), abs, signum, fromInteger, (negate | (-)) #-}
+  	-- Defined in ‘GHC.Num’
+instance Num NominalDiffTime
+  -- Defined in ‘time-1.9.3:Data.Time.Clock.Internal.NominalDiffTime’
+instance Num DiffTime
+  -- Defined in ‘time-1.9.3:Data.Time.Clock.Internal.DiffTime’
+instance Num Word -- Defined in ‘GHC.Num’
+instance Num Integer -- Defined in ‘GHC.Num’
+instance Num Int -- Defined in ‘GHC.Num’
+instance Num Float -- Defined in ‘GHC.Float’
+instance Num Double -- Defined in ‘GHC.Float’
+2022-07-04 12:34:24.539291334
+>>> 1>=2
+False
+2022-07-04 12:36:28.616779604
+>>> 'a' <'B'
+False
+2022-07-04 12:37:08.714855027
+>>> '' < 'a'
+
+<interactive>:5:1: error:
+    Parser error on `''`
+    Character literals may not be empty
+2022-07-04 12:37:45.463223588
+>>> 'ab' < 'b'
+
+<interactive>:6:1: error:
+    • Syntax error on 'ab'
+      Perhaps you intended to use TemplateHaskell or TemplateHaskellQuotes
+    • In the Template Haskell quotation 'ab'
+2022-07-04 12:38:20.093557207
+>>> 1 /= 1
+False
+2022-07-04 12:38:54.545210136
+>>> 1 /=2
+True
+2022-07-04 12:39:12.048197526
+>>> :Info abs
+unknown command ':Info'
+use :? for help.
+2022-07-04 12:41:11.041355131
+>>> abs
+
+<interactive>:10:1: error:
+    • No instance for (Show (Integer -> Integer))
+        arising from a use of ‘print’
+        (maybe you haven't applied a function to enough arguments?)
+    • In a stmt of an interactive GHCi command: print it
+2022-07-04 12:41:39.801711488
+>>> abs (-234)
+234
+2022-07-04 12:42:44.439477214
+>>> GHCi, version 9.0.2: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/airi/bprog2022/.ghci
+2022-07-04 12:47:05.97921735
+>>> [ x^ 2 | x <- [1 .. 5] ]
+[1,4,9,16,25]
+2022-07-04 12:49:24.655716645
+>>> map (^2) [1..5]
+[1,4,9,16,25]
+2022-07-04 12:50:05.874296252
+>>> [ x:2 | x <- [1..5]]]
+
+<interactive>:3:21: error: parse error on input ‘]’
+2022-07-04 12:51:27.42991923
+>>> [ x:2 | x <- [1..5]]
+
+<interactive>:4:1: error:
+    • Non type-variable argument in the constraint: Num [a]
+      (Use FlexibleContexts to permit this)
+    • When checking the inferred type
+        it :: forall {a}. (Enum a, Num a, Num [a]) => [[a]]
+2022-07-04 12:51:42.579618684
+>>> [ x * 2 | x <- [1 . . 5]]
+
+<interactive>:5:21: error: parse error on input ‘.’
+2022-07-04 12:52:37.307064715
+>>> [ x 'div' 2 |x <- [1 .. 5]]
+
+<interactive>:6:5: error:
+    • Syntax error on 'div'
+      Perhaps you intended to use TemplateHaskell or TemplateHaskellQuotes
+    • In the Template Haskell quotation 'div'
+2022-07-04 12:53:27.374609842
+>>> [ x 'div' 2 | x <- [1 .. 5]]
+
+<interactive>:7:5: error:
+    • Syntax error on 'div'
+      Perhaps you intended to use TemplateHaskell or TemplateHaskellQuotes
+    • In the Template Haskell quotation 'div'
+2022-07-04 12:54:21.122430534
+>>> GHCi, version 9.0.2: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/airi/bprog2022/.ghci
+2022-07-04 12:55:57.115593161
+>>> GHCi, version 9.0.2: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/airi/bprog2022/.ghci
+2022-07-04 16:02:34.380344363
+>>> [ x ^ 2 | x <- [1 .. 5]
+
+<interactive>:1:24: error:
+    parse error (possibly incorrect indentation or mismatched brackets)
+2022-07-04 16:04:13.74821904
+>>> [ x ^ 2 | x <- [1 .. 5] ]
+[1,4,9,16,25]
+2022-07-04 16:04:57.993276966
+>>> GHCi, version 9.0.2: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/airi/bprog2022/.ghci
+2022-07-04 16:07:41.113689301
+>>> [ x ^ 2 | x <- [ 1 .. 5] ]
+[1,4,9,16,25]
+2022-07-04 16:12:51.156596619
+>>> map (^2) [1 .. 5]
+[1,4,9,16,25]
+2022-07-04 16:13:51.826186677
+>>> [ x * 2 | x <- [1 .. 5]
+
+<interactive>:3:24: error:
+    parse error (possibly incorrect indentation or mismatched brackets)
+2022-07-04 16:14:54.812507873
+>>> [ x * 2 | x <- [1 .. 5] ]
+[2,4,6,8,10]
+2022-07-04 16:15:09.18031052
+>>> [ x `div` 2|x <- [1 .. 5] ]
+[0,1,1,2,2]
+2022-07-04 16:16:58.772945241
+>>> [ (x , y) |x <- "abc" , y <- [4,5] ]
+[('a',4),('a',5),('b',4),('b',5),('c',4),('c',5)]
+2022-07-04 16:20:36.937811349
+>>> [ x, y) |y <- [4,5], x ,- "abc" ]
+
+<interactive>:7:7: error: parse error on input ‘)’
+2022-07-04 16:21:52.075254181
+>>> [ x, y) |y <- [4,5], x<-,- "abc" ]
+
+<interactive>:8:7: error: parse error on input ‘)’
+2022-07-04 16:22:30.46306644
+>>> [ x, y) |y <- [4,5], x <- "abc" ]
+
+<interactive>:9:7: error: parse error on input ‘)’
+2022-07-04 16:22:48.288739451
+>>> [ (x, y) |y <- [4,5], x <- "abc" ]
+[('a',4),('b',4),('c',4),('a',5),('b',5),('c',5)]
+2022-07-04 16:23:09.688289707
+>>> :e
+No files to edit.
+2022-07-04 16:29:21.393276353
+>>> :l
+Ok, no modules loaded.
+2022-07-04 16:29:21.501111967
+>>> :e src/First.hs
+   1  module　First　where
+   2  
+   3      double :: Int -> Int
+   4      double x = x + x
+   5  
+   6      quadruple :: Int -> Int
+   7      quadruple x = double (double x)
+   8  
+   9      factorial :: Integer -> Integer
+  10      factorial n = product [1 .. n]
+  11  
+  12      average :: [Int] -> Int
+  13      average xs = sum xs `div` length xs
+  14  
+  15      ave :: [Int] -> Int
+  16      ave xs = div (sum xs) (length xs)
+  17  
+  18      myinit :: [a] -> [a]
+  19      myinit (x:[]) = []
+  20      myinit (x:xs) =x : init xs
+Ok, no modules loaded.
+2022-07-04 16:30:08.970651711
+>>> :l src/First.hs
+[1 of 1] Compiling First            ( src/First.hs, interpreted )
+Ok, one module loaded.
+2022-07-04 16:30:09.040261852
+>>> myconcat [[1,2,3],[4,5],[6.7.8.9]]
+
+<interactive>:15:1: error:
+    • Variable not in scope: myconcat :: [[a0 -> c0]] -> t
+    • Perhaps you meant one of these:
+        ‘mconcat’ (imported from Prelude), ‘concat’ (imported from Prelude)
+2022-07-04 16:32:57.850973107
+>>> myconcat [[1,2,3],[4,5],[6,7,8,9]]
+
+<interactive>:16:1: error:
+    • Variable not in scope: myconcat :: [[a0]] -> t
+    • Perhaps you meant one of these:
+        ‘mconcat’ (imported from Prelude), ‘concat’ (imported from Prelude)
+2022-07-04 16:34:17.950715338
+>>> [ 1 | _<- [1 ..5] ]
+[1,1,1,1,1]
+2022-07-04 16:37:53.655095845
+>>> :e
+   1  module　First　where
+   2  
+   3      double :: Int -> Int
+   4      double x = x + x
+   5  
+   6      quadruple :: Int -> Int
+   7      quadruple x = double (double x)
+   8  
+   9      factorial :: Integer -> Integer
+  10      factorial n = product [1 .. n]
+  11  
+  12      average :: [Int] -> Int
+  13      average xs = sum xs `div` length xs
+  14  
+  15      ave :: [Int] -> Int
+  16      ave xs = div (sum xs) (length xs)
+  17  
+  18      myinit :: [a] -> [a]
+  19      myinit (x:[]) = []
+  20      myinit (x:xs) =x : init xs
+Ok, one module loaded.
+2022-07-04 16:41:59.414591157
+>>> mylength ['a' .. 'z']
+
+<interactive>:19:1: error:
+    • Variable not in scope: mylength :: [Char] -> t
+    • Perhaps you meant ‘length’ (imported from Prelude)
+2022-07-04 16:42:58.951478406
+>>> mylength ['a' .. 'z' ]
+
+<interactive>:20:1: error:
+    • Variable not in scope: mylength :: [Char] -> t
+    • Perhaps you meant ‘length’ (imported from Prelude)
+2022-07-04 16:43:52.609046385
+>>> mylength ['a' .. 'z' ]
+
+<interactive>:21:1: error:
+    • Variable not in scope: mylength :: [Char] -> t
+    • Perhaps you meant ‘length’ (imported from Prelude)
+2022-07-04 16:45:12.961931425
+>>> mylength ['a' .. 'z' ]
+
+<interactive>:22:1: error:
+    • Variable not in scope: mylength :: [Char] -> t
+    • Perhaps you meant ‘length’ (imported from Prelude)
+2022-07-04 16:46:04.625969195
+>>> mylength ['a' .. 'z' ]
+
+<interactive>:23:1: error:
+    • Variable not in scope: mylength :: [Char] -> t
+    • Perhaps you meant ‘length’ (imported from Prelude)
+2022-07-04 16:47:10.342585886
+>>> mylength ['a' .. 'z' ]
+
+<interactive>:24:1: error:
+    • Variable not in scope: mylength :: [Char] -> t
+    • Perhaps you meant ‘length’ (imported from Prelude)
+2022-07-04 16:48:05.971167916
+>>> mylength ['a' .. 'z' ]
+
+<interactive>:25:1: error:
+    • Variable not in scope: mylength :: [Char] -> t
+    • Perhaps you meant ‘length’ (imported from Prelude)
+2022-07-04 16:49:09.830986465
+>>> :e
+   1  module　First　where
+   2  
+   3      double :: Int -> Int
+   4      double x = x + x
+   5  
+   6      quadruple :: Int -> Int
+   7      quadruple x = double (double x)
+   8  
+   9      factorial :: Integer -> Integer
+  10      factorial n = product [1 .. n]
+  11  
+  12      average :: [Int] -> Int
+  13      average xs = sum xs `div` length xs
+  14  
+  15      ave :: [Int] -> Int
+  16      ave xs = div (sum xs) (length xs)
+  17  
+  18      myinit :: [a] -> [a]
+  19      myinit (x:[]) = []
+  20      myinit (x:xs) =x : init xs
+Ok, one module loaded.
+2022-07-04 16:49:14.753806471
+>>> : r
+catn: r: openFile: does not exist (No such file or directory)
+2022-07-04 16:49:34.167145025
+>>> 
+2022-07-04 16:53:03.003890724
+>>> :e
+   1  module　First　where
+   2  
+   3      double :: Int -> Int
+   4      double x = x + x
+   5  
+   6      quadruple :: Int -> Int
+   7      quadruple x = double (double x)
+   8  
+   9      factorial :: Integer -> Integer
+  10      factorial n = product [1 .. n]
+  11  
+  12      average :: [Int] -> Int
+  13      average xs = sum xs `div` length xs
+  14  
+  15      ave :: [Int] -> Int
+  16      ave xs = div (sum xs) (length xs)
+  17  
+  18      myinit :: [a] -> [a]
+  19      myinit (x:[]) = []
+  20      myinit (x:xs) =x : (init xs)
+  21  
+  22      myconcat :: [[a]]-> [a]
+  23      myconcat xss = [ x | xs <- xss, x<- xs]
+  24  
+  25      mylength :: [a] -> Int
+  26      mylength xs = sum [ 1 | _<- xs]
+[1 of 1] Compiling First            ( src/First.hs, interpreted )
+Ok, one module loaded.
+2022-07-04 16:53:06.506087837
+>>> mylength ['a' .. 'z' ]
+26
+2022-07-04 16:53:17.653409394
+>>> ['a' .. 'z']
+"abcdefghijklmnopqrstuvwxyz"
+2022-07-04 16:55:05.007029145
+>>> ['あ' | 'ん']
+
+<interactive>:32:8: error:
+    • Couldn't match expected type ‘Bool’ with actual type ‘Char’
+    • In the expression: 'ん'
+      In a stmt of a list comprehension: 'ん'
+      In the expression: ['あ' | 'ん']
+2022-07-04 16:57:21.968709627
+>>> GHCi, version 9.0.2: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/airi/bprog2022/.ghci
+2022-07-04 16:59:33.300580784
+>>> ['あ' .. 'ん']
+"\12354\12355\12356\12357\12358\12359\12360\12361\12362\12363\12364\12365\12366\12367\12368\12369\12370\12371\12372\12373\12374\12375\12376\12377\12378\12379\12380\12381\12382\12383\12384\12385\12386\12387\12388\12389\12390\12391\12392\12393\12394\12395\12396\12397\12398\12399\12400\12401\12402\12403\12404\12405\12406\12407\12408\12409\12410\12411\12412\12413\12414\12415\12416\12417\12418\12419\12420\12421\12422\12423\12424\12425\12426\12427\12428\12429\12430\12431\12432\12433\12434\12435"
+2022-07-04 17:01:11.603046911
+>>> putStrLn it
+あぃいぅうぇえぉおかがきぎくぐけげこごさざしじすずせぜそぞただちぢっつづてでとどなにぬねのはばぱひびぴふぶぷへべぺほぼぽまみむめもゃやゅゆょよらりるれろゎわゐゑをん
+2022-07-04 17:01:43.595197371
+>>> :q
+Leaving GHCi.
+GHCi, version 9.0.2: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/airi/bprog2022/.ghci
+2022-07-04 17:43:46.431398959
+>>> [ x ^ 2 | x <- [1 .. 5] ]
+[1,4,9,16,25]
+2022-07-04 17:44:37.770811245
+>>> map (^2) [1 .. 5]
+[1,4,9,16,25]
+2022-07-04 17:45:16.626859407
+>>> [ x * 2 | x <- [ 1 .. 5]]
+[2,4,6,8,10]
+2022-07-04 17:46:13.597197037
+>>> [ x `div` 2 | x < [1 .. 5 ] ]
+
+<interactive>:4:3: error: Variable not in scope: x
+
+<interactive>:4:15: error: Variable not in scope: x :: [a0]
+2022-07-04 17:46:57.13819284
+>>> [ x `div` 2 | x <- [1 .. 5] ]
+[0,1,1,2,2]
+2022-07-04 17:47:44.016547148
+>>> [ x `divMod` 2 | x <- [1 .. 5] ]
+[(0,1),(1,0),(1,1),(2,0),(2,1)]
+2022-07-04 17:48:58.776564433
+>>> [ (x,y) |y <- [4, 5], x <- "abc" ]
+[('a',4),('b',4),('c',4),('a',5),('b',5),('c',5)]
+2022-07-04 17:50:42.269686208
+>>> GHCi, version 9.0.2: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/airi/bprog2022/.ghci
+2022-07-04 17:52:18.559252808
+>>> [ x ^ 2 | x <- [1 .. 5] ]
+[1,4,9,16,25]
+2022-07-04 17:54:05.03668699
+>>> map (^2) [1..5]
+[1,4,9,16,25]
+2022-07-04 17:54:48.222210082
+>>> [ x * 2 | x <- [1 .. 5] ]
+[2,4,6,8,10]
+2022-07-04 17:55:56.516247843
+>>> [ x `div` 2 | x < [1 .. 5] ]
+
+<interactive>:4:3: error: Variable not in scope: x
+
+<interactive>:4:15: error: Variable not in scope: x :: [a0]
+2022-07-04 17:56:40.205910823
+>>> [ x `divMod` 2 | x < [1 .. 5] ]
+
+<interactive>:5:3: error: Variable not in scope: x
+
+<interactive>:5:18: error: Variable not in scope: x :: [a0]
+2022-07-04 17:57:37.057874495
+>>> [ x `divMod` 2 | x <- [1 .. 5] ]
+[(0,1),(1,0),(1,1),(2,0),(2,1)]
+2022-07-04 17:58:32.217958946
+>>> [ (x ,y) | x <- "abc" ,y <- [4,5]
+
+<interactive>:7:34: error:
+    parse error (possibly incorrect indentation or mismatched brackets)
+2022-07-04 17:59:52.616607007
+>>> [ (x ,y) | x <- "abc" ,y <- [4,5] ]
+[('a',4),('a',5),('b',4),('b',5),('c',4),('c',5)]
+2022-07-04 18:01:00.085560489
+>>> [ (x,y) | y <- [4,5], <- "abc"
+
+<interactive>:9:23: error:
+    parse error on input ‘<-’
+    Perhaps this statement should be within a 'do' block?
+2022-07-04 18:02:59.038762634
+>>> [ (x,y) | y <- [4,5], <- "abc"]
+
+<interactive>:10:23: error:
+    parse error on input ‘<-’
+    Perhaps this statement should be within a 'do' block?
+2022-07-04 18:03:09.270530768
+>>> [ (x,y) | y <- [4,5],x  <- "abc"]
+[('a',4),('b',4),('c',4),('a',5),('b',5),('c',5)]
+2022-07-04 18:03:37.838069088
+>>> l src/
+
+<interactive>:12:7: error:
+    parse error (possibly incorrect indentation or mismatched brackets)
+2022-07-04 18:06:30.29249258
+>>> l src/First.hs
+
+<interactive>:13:7: error:
+    Not in scope: ‘First.hs’
+    No module named ‘First’ is imported.
+2022-07-04 18:07:19.034221782
+>>> :e src/First.hs
+   1  module　First　where
+   2  
+   3      double :: Int -> Int
+   4      double x = x + x
+   5  
+   6      quadruple :: Int -> Int
+   7      quadruple x = double (double x)
+   8  
+   9      factorial :: Integer -> Integer
+  10      factorial n = product [1 .. n]
+  11  
+  12      average :: [Int] -> Int
+  13      average xs = sum xs `div` length xs
+  14  
+  15      ave :: [Int] -> Int
+  16      ave xs = div (sum xs) (length xs)
+  17  
+  18      myinit :: [a] -> [a]
+  19      myinit (x:[]) = []
+  20      myinit (x:xs) =x : (init xs)
+  21  
+  22      myconcat :: [[a]] -> [a]
+  23      myconcat xss = [x |xs <- xss, x <- xs]
+Ok, no modules loaded.
+2022-07-04 18:07:54.99265847
+>>> :l src/First.hs
+[1 of 1] Compiling First            ( src/First.hs, interpreted )
+Ok, one module loaded.
+2022-07-04 18:07:55.097744574
+>>> myconcat [[1,2,3],[4,5],[6,7,8,9]]
+[1,2,3,4,5,6,7,8,9]
+2022-07-04 18:08:54.910119115
+>>> [ 1| _<- [1 .. 5] ]
+[1,1,1,1,1]
+2022-07-04 18:10:14.054915725
+>>> :e
+   1  module　First　where
+   2  
+   3      double :: Int -> Int
+   4      double x = x + x
+   5  
+   6      quadruple :: Int -> Int
+   7      quadruple x = double (double x)
+   8  
+   9      factorial :: Integer -> Integer
+  10      factorial n = product [1 .. n]
+  11  
+  12      average :: [Int] -> Int
+  13      average xs = sum xs `div` length xs
+  14  
+  15      ave :: [Int] -> Int
+  16      ave xs = div (sum xs) (length xs)
+  17  
+  18      myinit :: [a] -> [a]
+  19      myinit (x:[]) = []
+  20      myinit (x:xs) =x : (init xs)
+  21  
+  22      myconcat :: [[a]] -> [a]
+  23      myconcat xss = [x |xs <- xss, x <- xs]
+  24  
+  25      mylength :: [a] -> Int
+  26      mylength xs = [ 1 | _<-xs]
+[1 of 1] Compiling First            ( src/First.hs, interpreted )
+
+src/First.hs:26:19: error:
+    • Couldn't match expected type ‘Int’ with actual type ‘[a0]’
+    • In the expression: [1 | _ <- xs]
+      In an equation for ‘mylength’: mylength xs = [1 | _ <- xs]
+   |
+26 |     mylength xs = [ 1 | _<-xs]
+   |                   ^^^^^^^^^^^^
+Failed, no modules loaded.
+2022-07-04 18:12:04.436082598
+>>> mylength ['a' .. 'z']
+
+<interactive>:19:1: error:
+    • Variable not in scope: mylength :: [Char] -> t
+    • Perhaps you meant ‘length’ (imported from Prelude)
+2022-07-04 18:13:15.532716625
+>>> mylength ['a' .. 'z']
+
+<interactive>:20:1: error:
+    • Variable not in scope: mylength :: [Char] -> t
+    • Perhaps you meant ‘length’ (imported from Prelude)
+2022-07-04 18:14:25.352854236
+>>> mylength ['a' .. 'z']
+
+<interactive>:21:1: error:
+    • Variable not in scope: mylength :: [Char] -> t
+    • Perhaps you meant ‘length’ (imported from Prelude)
+2022-07-04 18:15:20.233067418
+>>> :e
+   1  module　First　where
+   2  
+   3      double :: Int -> Int
+   4      double x = x + x
+   5  
+   6      quadruple :: Int -> Int
+   7      quadruple x = double (double x)
+   8  
+   9      factorial :: Integer -> Integer
+  10      factorial n = product [1 .. n]
+  11  
+  12      average :: [Int] -> Int
+  13      average xs = sum xs `div` length xs
+  14  
+  15      ave :: [Int] -> Int
+  16      ave xs = div (sum xs) (length xs)
+  17  
+  18      myinit :: [a] -> [a]
+  19      myinit (x:[]) = []
+  20      myinit (x:xs) =x : (init xs)
+  21  
+  22      myconcat :: [[a]] -> [a]
+  23      myconcat xss = [x |xs <- xss, x <- xs]
+  24  
+  25      mylength :: [a] -> Int
+  26      mylength xs = sum [ 1 | _<- xs]
+[1 of 1] Compiling First            ( src/First.hs, interpreted )
+Ok, one module loaded.
+2022-07-04 18:15:53.014393189
+>>> mylength ['a' .. 'z']
+26
+2022-07-04 18:15:57.222201938
+>>> ['あ' | 'ん']
+
+<interactive>:24:8: error:
+    • Couldn't match expected type ‘Bool’ with actual type ‘Char’
+    • In the expression: 'ん'
+      In a stmt of a list comprehension: 'ん'
+      In the expression: ['あ' | 'ん']
+2022-07-04 18:17:45.135868383
+>>> 
+2022-07-04 18:21:15.040733941
+>>> 
+2022-07-04 18:26:50.106398464
+>>> ['あ' | 'ん']
+
+<interactive>:27:8: error:
+    • Couldn't match expected type ‘Bool’ with actual type ‘Char’
+    • In the expression: 'ん'
+      In a stmt of a list comprehension: 'ん'
+      In the expression: ['あ' | 'ん']
+2022-07-04 18:28:19.9340937
+>>> putStrln  it
+
+<interactive>:28:1: error:
+    • Variable not in scope: putStrln :: Int -> t
+    • Perhaps you meant one of these:
+        ‘putStrLn’ (imported from Prelude),
+        ‘putStr’ (imported from Prelude)
+2022-07-04 18:32:45.218868548
+>>> [ 'あ' .. 'ん']
+"\12354\12355\12356\12357\12358\12359\12360\12361\12362\12363\12364\12365\12366\12367\12368\12369\12370\12371\12372\12373\12374\12375\12376\12377\12378\12379\12380\12381\12382\12383\12384\12385\12386\12387\12388\12389\12390\12391\12392\12393\12394\12395\12396\12397\12398\12399\12400\12401\12402\12403\12404\12405\12406\12407\12408\12409\12410\12411\12412\12413\12414\12415\12416\12417\12418\12419\12420\12421\12422\12423\12424\12425\12426\12427\12428\12429\12430\12431\12432\12433\12434\12435"
+2022-07-04 18:35:28.381202129
+>>> putStrln  it
+
+<interactive>:30:1: error:
+    • Variable not in scope: putStrln :: [Char] -> t
+    • Perhaps you meant one of these:
+        ‘putStrLn’ (imported from Prelude),
+        ‘putStr’ (imported from Prelude)
+2022-07-04 18:35:33.292850272
+>>> putStrln  it
+
+<interactive>:31:1: error:
+    • Variable not in scope: putStrln :: [Char] -> t
+    • Perhaps you meant one of these:
+        ‘putStrLn’ (imported from Prelude),
+        ‘putStr’ (imported from Prelude)
+2022-07-04 18:37:05.815589344
+>>> putSutLn it
+
+<interactive>:32:1: error:
+    • Variable not in scope: putSutLn :: [Char] -> t
+    • Perhaps you meant ‘putStrLn’ (imported from Prelude)
+2022-07-04 18:37:19.411550123
+>>> 
+2022-07-04 18:37:46.926680292
+>>> putStrLn it
+あぃいぅうぇえぉおかがきぎくぐけげこごさざしじすずせぜそぞただちぢっつづてでとどなにぬねのはばぱひびぴふぶぷへべぺほぼぽまみむめもゃやゅゆょよらりるれろゎわゐゑをん
+2022-07-04 18:38:07.563226561
+>>> :q
+Leaving GHCi.
