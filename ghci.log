@@ -1016,3 +1016,167 @@ Ok, one module loaded.
 2022-07-04 18:38:07.563226561
 >>> :q
 Leaving GHCi.
+GHCi, version 9.0.2: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/airi/bprog2022/.ghci
+2022-07-07 16:05:00.160719294
+>>> :e src/Caesar.hs
+   1  module Caesal where
+   2  
+   3  import Date.Char
+Ok, no modules loaded.
+2022-07-07 16:05:33.279228727
+>>> :l src/Caesar.hs
+[1 of 1] Compiling Caesal           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:3:1: error:
+    Could not find module ‘Date.Char’
+    Perhaps you meant Data.Char (from base-4.15.1.0)
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+  |
+3 | import Date.Char
+  | ^^^^^^^^^^^^^^^^
+Failed, no modules loaded.
+2022-07-07 16:05:33.350318911
+>>> ord 'A'
+
+<interactive>:3:1: error:
+    • Variable not in scope: ord :: Char -> t
+    • Perhaps you meant one of these:
+        ‘or’ (imported from Prelude), ‘odd’ (imported from Prelude)
+2022-07-07 16:05:58.918729873
+>>> ord 'A'
+
+<interactive>:4:1: error:
+    • Variable not in scope: ord :: Char -> t
+    • Perhaps you meant one of these:
+        ‘or’ (imported from Prelude), ‘odd’ (imported from Prelude)
+2022-07-07 16:07:48.318740211
+>>> ord 'A'
+
+<interactive>:5:1: error:
+    • Variable not in scope: ord :: Char -> t
+    • Perhaps you meant one of these:
+        ‘or’ (imported from Prelude), ‘odd’ (imported from Prelude)
+2022-07-07 16:10:52.816318781
+>>> GHCi, version 9.0.2: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/airi/bprog2022/.ghci
+2022-07-07 20:22:50.59458737
+>>> 
+2022-07-07 20:22:58.248081206
+>>> :e src Caesar.hs
+catn: src: openFile: inappropriate type (is a directory)
+2022-07-07 20:23:22.548821837
+>>> :l src Caesar.hs
+target ‘src’ is not a module name or a source file
+2022-07-07 20:23:22.613370842
+>>> GHCi, version 9.0.2: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/airi/bprog2022/.ghci
+2022-07-07 20:24:34.087342418
+>>> :e src/Caesal.hs
+catn: src/Caesal.hs: openFile: does not exist (No such file or directory)
+2022-07-07 20:24:53.149811398
+>>> :l src/Caesal.hs
+
+<no location info>: error: can't find file: src/Caesal.hs
+Failed, no modules loaded.
+2022-07-07 20:24:53.255101281
+>>> GHCi, version 9.0.2: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/airi/bprog2022/.ghci
+2022-07-07 20:28:44.395893537
+>>> :e src/caesar.hs
+catn: src/caesar.hs: openFile: does not exist (No such file or directory)
+2022-07-07 20:29:05.617400351
+>>> :l src/caesar.hs
+
+<no location info>: error: can't find file: src/caesar.hs
+Failed, no modules loaded.
+2022-07-07 20:29:05.7155852
+>>> :e src/Caesar.hs
+   1  module Caesal where
+   2  
+   3  import Date.Char
+
+<no location info>: error: can't find file: src/caesar.hs
+Failed, no modules loaded.
+2022-07-07 20:29:48.909124477
+>>> :l src/Caesar.hs
+[1 of 1] Compiling Caesal           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:3:1: error:
+    Could not find module ‘Date.Char’
+    Perhaps you meant Data.Char (from base-4.15.1.0)
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+  |
+3 | import Date.Char
+  | ^^^^^^^^^^^^^^^^
+Failed, no modules loaded.
+2022-07-07 20:29:49.009428228
+>>> ord 'A'
+
+<interactive>:5:1: error:
+    • Variable not in scope: ord :: Char -> t
+    • Perhaps you meant one of these:
+        ‘or’ (imported from Prelude), ‘odd’ (imported from Prelude)
+2022-07-07 20:30:13.914030952
+>>> 
+2022-07-07 20:33:43.486119789
+>>> ord 'A'
+
+<interactive>:7:1: error:
+    • Variable not in scope: ord :: Char -> t
+    • Perhaps you meant one of these:
+        ‘or’ (imported from Prelude), ‘odd’ (imported from Prelude)
+2022-07-07 20:33:55.361427808
+>>> :e src/Caesar.hs
+   1  module Caesar where
+   2  
+   3  import Date.Char
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:3:1: error:
+    Could not find module ‘Date.Char’
+    Perhaps you meant Data.Char (from base-4.15.1.0)
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+  |
+3 | import Date.Char
+  | ^^^^^^^^^^^^^^^^
+Failed, no modules loaded.
+2022-07-07 20:34:53.442186327
+>>> :l src/Caesar.hs
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:3:1: error:
+    Could not find module ‘Date.Char’
+    Perhaps you meant Data.Char (from base-4.15.1.0)
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+  |
+3 | import Date.Char
+  | ^^^^^^^^^^^^^^^^
+Failed, no modules loaded.
+2022-07-07 20:34:53.537129592
+>>> ord 'A'
+
+<interactive>:10:1: error:
+    • Variable not in scope: ord :: Char -> t
+    • Perhaps you meant one of these:
+        ‘or’ (imported from Prelude), ‘odd’ (imported from Prelude)
+2022-07-07 20:35:03.516917593
+>>> :e src/Caesar.hs
+   1  module Caesar where
+   2  
+   3  import Data.Char
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+Ok, one module loaded.
+2022-07-07 20:36:00.353373154
+>>> :l src/Caesar.hs
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+Ok, one module loaded.
+2022-07-07 20:36:00.441874201
+>>> ord 'A'
+65
+2022-07-07 20:36:12.673558952
+>>> ord 'a'
+97
+2022-07-07 20:36:25.237326075
+>>> ::q
+Leaving GHCi.

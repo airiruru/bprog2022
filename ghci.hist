@@ -1,3 +1,13 @@
+::q
+ord 'a'
+ord 'A'
+:l src/Caesar.hs
+ord 'A'
+:l src/Caesar.hs
+ord 'A'
+ord 'A'
+:l src/Caesar.hs
+:l src/caesar.hs
 :q
 putStrLn it
 putSutLn it
