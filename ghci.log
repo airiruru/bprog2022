@@ -1180,3 +1180,1477 @@ Ok, one module loaded.
 2022-07-07 20:36:25.237326075
 >>> ::q
 Leaving GHCi.
+GHCi, version 9.0.2: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/airi/bprog2022/.ghci
+2022-07-14 18:03:01.464254193
+>>> :e src/Caesar where
+catn: src/Caesar: openFile: does not exist (No such file or directory)
+2022-07-14 18:03:49.687287988
+>>> :l src/Caesar where
+target ‘where’ is not a module name or a source file
+2022-07-14 18:03:49.765283464
+>>> :e src/Caesar.hs
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int :: c = ord c
+Ok, no modules loaded.
+2022-07-14 18:04:20.876734772
+>>> :l src/Caesar.hs
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:6:1: error:
+    • You cannot bind scoped type variable ‘c’
+        in a pattern binding signature
+    • In the pattern: let2int :: c
+      In a pattern binding: let2int :: c = ord c
+  |
+6 | let2int :: c = ord c
+  | ^^^^^^^^^^^^
+
+src/Caesar.hs:6:20: error: Variable not in scope: c :: Char
+  |
+6 | let2int :: c = ord c
+  |                    ^
+Failed, no modules loaded.
+2022-07-14 18:04:20.971050702
+>>> let2int 'a'
+
+<interactive>:5:1: error:
+    Variable not in scope: let2int :: Char -> t
+2022-07-14 18:05:43.217037376
+>>> GHCi, version 9.0.2: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/airi/bprog2022/.ghci
+2022-07-14 18:07:48.691947453
+>>> :e src/Caesar.hs
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int :: c = ord c
+Ok, no modules loaded.
+2022-07-14 18:08:11.054421055
+>>> :l src/Caesar.hs
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:6:1: error:
+    • You cannot bind scoped type variable ‘c’
+        in a pattern binding signature
+    • In the pattern: let2int :: c
+      In a pattern binding: let2int :: c = ord c
+  |
+6 | let2int :: c = ord c
+  | ^^^^^^^^^^^^
+
+src/Caesar.hs:6:20: error: Variable not in scope: c :: Char
+  |
+6 | let2int :: c = ord c
+  |                    ^
+Failed, no modules loaded.
+2022-07-14 18:08:11.15773536
+>>> :e src/Caesar.hs
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int :: c = ord c
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:6:1: error:
+    • You cannot bind scoped type variable ‘c’
+        in a pattern binding signature
+    • In the pattern: let2int :: c
+      In a pattern binding: let2int :: c = ord c
+  |
+6 | let2int :: c = ord c
+  | ^^^^^^^^^^^^
+
+src/Caesar.hs:6:20: error: Variable not in scope: c :: Char
+  |
+6 | let2int :: c = ord c
+  |                    ^
+Failed, no modules loaded.
+2022-07-14 18:08:57.09601612
+>>> :l src/Caesar.hs
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:6:1: error:
+    • You cannot bind scoped type variable ‘c’
+        in a pattern binding signature
+    • In the pattern: let2int :: c
+      In a pattern binding: let2int :: c = ord c
+  |
+6 | let2int :: c = ord c
+  | ^^^^^^^^^^^^
+
+src/Caesar.hs:6:20: error: Variable not in scope: c :: Char
+  |
+6 | let2int :: c = ord c
+  |                    ^
+Failed, no modules loaded.
+2022-07-14 18:08:57.194020813
+>>> :e src/Caesar.hs
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int :: c = ord c
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:6:1: error:
+    • You cannot bind scoped type variable ‘c’
+        in a pattern binding signature
+    • In the pattern: let2int :: c
+      In a pattern binding: let2int :: c = ord c
+  |
+6 | let2int :: c = ord c
+  | ^^^^^^^^^^^^
+
+src/Caesar.hs:6:20: error: Variable not in scope: c :: Char
+  |
+6 | let2int :: c = ord c
+  |                    ^
+Failed, no modules loaded.
+2022-07-14 18:09:58.93149111
+>>> :l src/Caesar.hs
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:6:1: error:
+    • You cannot bind scoped type variable ‘c’
+        in a pattern binding signature
+    • In the pattern: let2int :: c
+      In a pattern binding: let2int :: c = ord c
+  |
+6 | let2int :: c = ord c
+  | ^^^^^^^^^^^^
+
+src/Caesar.hs:6:20: error: Variable not in scope: c :: Char
+  |
+6 | let2int :: c = ord c
+  |                    ^
+Failed, no modules loaded.
+2022-07-14 18:09:59.030439251
+>>> GHCi, version 9.0.2: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/airi/bprog2022/.ghci
+2022-07-14 18:10:36.438667339
+>>> :e src/Caesar.hs
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int :: c = ord c
+Ok, no modules loaded.
+2022-07-14 18:11:16.656368633
+>>> :l src/Caesar.hs
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:6:1: error:
+    • You cannot bind scoped type variable ‘c’
+        in a pattern binding signature
+    • In the pattern: let2int :: c
+      In a pattern binding: let2int :: c = ord c
+  |
+6 | let2int :: c = ord c
+  | ^^^^^^^^^^^^
+
+src/Caesar.hs:6:20: error: Variable not in scope: c :: Char
+  |
+6 | let2int :: c = ord c
+  |                    ^
+Failed, no modules loaded.
+2022-07-14 18:11:16.760788967
+>>> let2int 'a'
+
+<interactive>:3:1: error:
+    Variable not in scope: let2int :: Char -> t
+2022-07-14 18:12:07.982912784
+>>> let2Int 'a'
+
+<interactive>:4:1: error:
+    Variable not in scope: let2Int :: Char -> t
+2022-07-14 18:12:48.942063312
+>>> GHCi, version 9.0.2: https://www.haskell.org/ghc/  :? for help
+Loaded GHCi configuration from /home/airi/bprog2022/.ghci
+2022-07-14 18:13:27.129901353
+>>> :e src/Caesar.hs
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int :: c = ord c
+Ok, no modules loaded.
+2022-07-14 18:13:48.483544802
+>>> :l src/Caesar.hs
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:6:1: error:
+    • You cannot bind scoped type variable ‘c’
+        in a pattern binding signature
+    • In the pattern: let2int :: c
+      In a pattern binding: let2int :: c = ord c
+  |
+6 | let2int :: c = ord c
+  | ^^^^^^^^^^^^
+
+src/Caesar.hs:6:20: error: Variable not in scope: c :: Char
+  |
+6 | let2int :: c = ord c
+  |                    ^
+Failed, no modules loaded.
+2022-07-14 18:13:48.587312975
+>>> :e src/Caesar.hs
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int c = ord c
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+Ok, one module loaded.
+2022-07-14 18:15:35.618034679
+>>> :l src/Caesar.hs
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+Ok, one module loaded.
+2022-07-14 18:15:35.717609915
+>>> let2int 'a'
+97
+2022-07-14 18:15:48.328736168
+>>> let2int 'z'
+122
+2022-07-14 18:17:47.073857904
+>>> :e
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int c = ord c - ord 'a'
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+Ok, one module loaded.
+2022-07-14 18:19:40.588022473
+>>> let2int 'a'
+0
+2022-07-14 18:19:59.930936582
+>>> let2int 'z'
+25
+2022-07-14 18:20:11.592542094
+>>> ord 'a'
+97
+2022-07-14 18:22:22.025101584
+>>> chr 97
+'a'
+2022-07-14 18:22:42.036536524
+>>> int2let 0
+
+<interactive>:12:1: error:
+    Variable not in scope: int2let :: t0 -> t
+2022-07-14 18:24:20.352234483
+>>> :e
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int c = ord c - ord 'a'
+   7  
+   8  int2let :: Int -> Char
+   9  int2let i = chr (i + ord 'a')
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+Ok, one module loaded.
+2022-07-14 18:24:44.044891308
+>>> int2let 0
+'a'
+2022-07-14 18:24:54.393966834
+>>> int2let 25 
+'z'
+2022-07-14 18:25:11.565724614
+>>> :e
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int c = ord c - ord 'a'
+   7  
+   8  int2let :: Int -> Char
+   9  int2let n = chr (i + ord 'a' + n)
+  10  
+  11  shift :: Int -> (Char -> Char)
+  12  shift n c = 
+  13      | isLower c = int2let ((let2int c + n) `mod` 26)
+  14      | otherwise = c
+  15      
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:13:5: error: parse error on input ‘|’
+   |
+13 |     | isLower c = int2let ((let2int c + n) `mod` 26)
+   |     ^
+Failed, no modules loaded.
+2022-07-14 18:31:54.796421149
+>>> ::r
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:13:5: error: parse error on input ‘|’
+   |
+13 |     | isLower c = int2let ((let2int c + n) `mod` 26)
+   |     ^
+Failed, no modules loaded.
+2022-07-14 18:34:31.540869735
+>>> :e
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int c = ord c - ord 'a'
+   7  
+   8  int2let :: Int -> Char
+   9  int2let n = chr (i + ord 'a' + n)
+  10  
+  11  shift :: Int -> (Char -> Char)
+  12  shift n c = 
+  13      | isLower c = int2let ((let2int c + n) `mod` 26)
+  14      | otherwise = c
+  15      
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:13:5: error: parse error on input ‘|’
+   |
+13 |     | isLower c = int2let ((let2int c + n) `mod` 26)
+   |     ^
+Failed, no modules loaded.
+2022-07-14 18:35:26.685939123
+>>> :e
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int c = ord c - ord 'a'
+   7  
+   8  int2let :: Int -> Char
+   9  int2let n = chr (i + ord 'a' + n)
+  10  
+  11  shift :: Int -> (Char -> Char)
+  12  shift n c = 
+  13     ¦ isLower c = int2let ((let2int c + n) `mod` 26)
+  14     ¦ otherwise = c 
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:13:4: error: parse error on input ‘¦’
+   |
+13 |    ¦ isLower c = int2let ((let2int c + n) `mod` 26)
+   |    ^
+Failed, no modules loaded.
+2022-07-14 18:41:08.140909394
+>>> :e
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int c = ord c - ord 'a'
+   7  
+   8  int2let :: Int -> Char
+   9  int2let n = chr (i + ord 'a' + n)
+  10  
+  11  shift :: Int -> (Char -> Char)
+  12  shift n c = 
+  13     isLower c = int2let ((let2int c + n) `mod` 26)
+  14     otherwise = c 
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:13:14: error: parse error on input ‘=’
+   |
+13 |    isLower c = int2let ((let2int c + n) `mod` 26)
+   |              ^
+Failed, no modules loaded.
+2022-07-14 18:41:33.053383793
+>>> :e
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int c = ord c - ord 'a'
+   7  
+   8  int2let :: Int -> Char
+   9  int2let n = chr (i + ord 'a' + n)
+  10  
+  11  shift :: Int -> (Char -> Char)
+  12  shift n c 
+  13    | isLower c = int2let ((let2int c + n) `mod` 26)
+  14    | otherwise = c
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:9:18: error: Variable not in scope: i :: Int
+  |
+9 | int2let n = chr (i + ord 'a' + n)
+  |                  ^
+Failed, no modules loaded.
+2022-07-14 18:43:06.783960925
+>>> :e
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int c = ord c - ord 'a'
+   7  
+   8  int2let :: Int -> Char
+   9  int2let n = chr (ord 'a' + n)
+  10  
+  11  shift :: Int -> (Char -> Char)
+  12  shift n c 
+  13    | isLower c = int2let ((let2int c + n) `mod` 26)
+  14    | otherwise = c
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+Ok, one module loaded.
+2022-07-14 18:43:49.989960782
+>>> shift 3 'a'
+'d'
+2022-07-14 18:44:15.518512264
+>>> shift (-3) 'd'
+'a'
+2022-07-14 18:44:35.00494136
+>>> shift 3 'z'
+'c'
+2022-07-14 18:45:06.810518437
+>>> shift 3 ' '
+' '
+2022-07-14 18:46:04.691911589
+>>> :e
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int c = ord c - ord 'a'
+   7  
+   8  int2let :: Int -> Char
+   9  int2let n = chr (ord 'a' + n)
+  10  
+  11  shift :: Int -> (Char -> Char)
+  12  shift n c 
+  13    | isLower c = int2let ((let2int c + n) `mod` 26)
+  14    | otherwise = c
+  15  
+  16  encode :: Int -> (string -> string)
+  17  encode n xs = [ shift n x | x <- xs ]
+  18  
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:17:15: error:
+    • Couldn't match expected type ‘string’ with actual type ‘[Char]’
+      ‘string’ is a rigid type variable bound by
+        the type signature for:
+          encode :: forall string. Int -> string -> string
+        at src/Caesar.hs:16:1-35
+    • In the expression: [shift n x | x <- xs]
+      In an equation for ‘encode’: encode n xs = [shift n x | x <- xs]
+    • Relevant bindings include
+        xs :: string (bound at src/Caesar.hs:17:10)
+        encode :: Int -> string -> string (bound at src/Caesar.hs:17:1)
+   |
+17 | encode n xs = [ shift n x | x <- xs ]
+   |               ^^^^^^^^^^^^^^^^^^^^^^^
+Failed, no modules loaded.
+2022-07-14 18:49:59.708444325
+>>> :e
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int c = ord c - ord 'a'
+   7  
+   8  int2let :: Int -> Char
+   9  int2let n = chr (ord 'a' + n)
+  10  
+  11  shift :: Int -> (Char -> Char)
+  12  shift n c 
+  13    | isLower c = int2let ((let2int c + n) `mod` 26)
+  14    | otherwise = c
+  15  
+  16  encode :: Int -> (string -> string)
+  17  encode n xs = [ shift n x | x <- xs ]
+  18  
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:17:15: error:
+    • Couldn't match expected type ‘string’ with actual type ‘[Char]’
+      ‘string’ is a rigid type variable bound by
+        the type signature for:
+          encode :: forall string. Int -> string -> string
+        at src/Caesar.hs:16:1-35
+    • In the expression: [shift n x | x <- xs]
+      In an equation for ‘encode’: encode n xs = [shift n x | x <- xs]
+    • Relevant bindings include
+        xs :: string (bound at src/Caesar.hs:17:10)
+        encode :: Int -> string -> string (bound at src/Caesar.hs:17:1)
+   |
+17 | encode n xs = [ shift n x | x <- xs ]
+   |               ^^^^^^^^^^^^^^^^^^^^^^^
+Failed, no modules loaded.
+2022-07-14 18:56:21.430764624
+>>> 
+2022-07-14 19:00:50.938271242
+>>> :e
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int c = ord c - ord 'a'
+   7  
+   8  int2let :: Int -> Char
+   9  int2let n = chr (ord 'a' + n)
+  10  
+  11  shift :: Int -> (Char -> Char)
+  12  shift n c 
+  13    | isLower c = int2let ((let2int c + n) `mod` 26)
+  14    | otherwise = c
+  15  
+  16  encode :: Int -> (string -> string)
+  17  encode n xs = [ shift n x | x <- xs ]
+  18  
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:17:15: error:
+    • Couldn't match expected type ‘string’ with actual type ‘[Char]’
+      ‘string’ is a rigid type variable bound by
+        the type signature for:
+          encode :: forall string. Int -> string -> string
+        at src/Caesar.hs:16:1-35
+    • In the expression: [shift n x | x <- xs]
+      In an equation for ‘encode’: encode n xs = [shift n x | x <- xs]
+    • Relevant bindings include
+        xs :: string (bound at src/Caesar.hs:17:10)
+        encode :: Int -> string -> string (bound at src/Caesar.hs:17:1)
+   |
+17 | encode n xs = [ shift n x | x <- xs ]
+   |               ^^^^^^^^^^^^^^^^^^^^^^^
+Failed, no modules loaded.
+2022-07-14 19:00:53.945064974
+>>> :e
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int c = ord c - ord 'a'
+   7  
+   8  int2let :: Int -> Char
+   9  int2let n = chr (ord 'a' + n)
+  10  
+  11  shift :: Int -> (Char -> Char)
+  12  shift n c 
+  13    | isLower c = int2let ((let2int c + n) `mod` 26)
+  14    | otherwise = c
+  15  
+  16  encode :: Int -> (string -> string)
+  17  encode n xs = [shift n x | x <- xs]
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:17:15: error:
+    • Couldn't match expected type ‘string’ with actual type ‘[Char]’
+      ‘string’ is a rigid type variable bound by
+        the type signature for:
+          encode :: forall string. Int -> string -> string
+        at src/Caesar.hs:16:1-35
+    • In the expression: [shift n x | x <- xs]
+      In an equation for ‘encode’: encode n xs = [shift n x | x <- xs]
+    • Relevant bindings include
+        xs :: string (bound at src/Caesar.hs:17:10)
+        encode :: Int -> string -> string (bound at src/Caesar.hs:17:1)
+   |
+17 | encode n xs = [shift n x | x <- xs]
+   |               ^^^^^^^^^^^^^^^^^^^^^
+Failed, no modules loaded.
+2022-07-14 19:05:39.684727813
+>>> 
+2022-07-14 19:05:42.161938959
+>>> :e
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int c = ord c - ord 'a'
+   7  
+   8  int2let :: Int -> Char
+   9  int2let n = chr (ord 'a' + n)
+  10  
+  11  shift :: Int -> (Char -> Char)
+  12  shift n c 
+  13    | isLower c = int2let ((let2int c + n) `mod` 26)
+  14    | otherwise = c
+  15  
+  16  encode :: Int -> (string -> string)
+  17  encode n xs = [shift nx | x <- xs]
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:17:22: error:
+    • Variable not in scope: nx :: Int
+    • Perhaps you meant one of these: ‘x’ (line 17), ‘n’ (line 17)
+   |
+17 | encode n xs = [shift nx | x <- xs]
+   |                      ^^
+Failed, no modules loaded.
+2022-07-14 19:05:57.051057108
+>>> :e
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int c = ord c - ord 'a'
+   7  
+   8  int2let :: Int -> Char
+   9  int2let n = chr (ord 'a' + n)
+  10  
+  11  shift :: Int -> (Char -> Char)
+  12  shift n c 
+  13    | isLower c = int2let ((let2int c + n) `mod` 26)
+  14    | otherwise = c
+  15  
+  16  encode :: Int -> (string -> string)
+  17  encode n xs = [ shift n x | x <- xs ]
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:17:15: error:
+    • Couldn't match expected type ‘string’ with actual type ‘[Char]’
+      ‘string’ is a rigid type variable bound by
+        the type signature for:
+          encode :: forall string. Int -> string -> string
+        at src/Caesar.hs:16:1-35
+    • In the expression: [shift n x | x <- xs]
+      In an equation for ‘encode’: encode n xs = [shift n x | x <- xs]
+    • Relevant bindings include
+        xs :: string (bound at src/Caesar.hs:17:10)
+        encode :: Int -> string -> string (bound at src/Caesar.hs:17:1)
+   |
+17 | encode n xs = [ shift n x | x <- xs ]
+   |               ^^^^^^^^^^^^^^^^^^^^^^^
+Failed, no modules loaded.
+2022-07-14 19:06:40.687644267
+>>> 
+2022-07-14 19:08:21.42329777
+>>> :e
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int c = ord c - ord 'a'
+   7  
+   8  int2let :: Int -> Char
+   9  int2let n = chr (ord 'a' + n)
+  10  
+  11  shift :: Int -> (Char -> Char)
+  12  shift n c 
+  13    | isLower c = int2let ((let2int c + n) `mod` 26)
+  14    | otherwise = c
+  15  
+  16  encode :: Int -> (string -> string)
+  17  encode n xs = [ shift n x | x <- xs ]
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:17:15: error:
+    • Couldn't match expected type ‘string’ with actual type ‘[Char]’
+      ‘string’ is a rigid type variable bound by
+        the type signature for:
+          encode :: forall string. Int -> string -> string
+        at src/Caesar.hs:16:1-35
+    • In the expression: [shift n x | x <- xs]
+      In an equation for ‘encode’: encode n xs = [shift n x | x <- xs]
+    • Relevant bindings include
+        xs :: string (bound at src/Caesar.hs:17:10)
+        encode :: Int -> string -> string (bound at src/Caesar.hs:17:1)
+   |
+17 | encode n xs = [ shift n x | x <- xs ]
+   |               ^^^^^^^^^^^^^^^^^^^^^^^
+Failed, no modules loaded.
+2022-07-14 19:08:24.254983574
+>>> :e
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int c = ord c - ord 'a'
+   7  
+   8  int2let :: Int -> Char
+   9  int2let n = chr (ord 'a' + n)
+  10  
+  11  shift :: Int -> (Char -> Char)
+  12  shift n c 
+  13    | isLower c = int2let ((let2int c + n) `mod` 26)
+  14    | otherwise = c
+  15  
+  16  encode :: Int -> (string -> string)
+  17  encode n xs = [ shift n x ¦ x <- xs ]
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:17:31: error:
+    parse error on input ‘<-’
+    Perhaps this statement should be within a 'do' block?
+   |
+17 | encode n xs = [ shift n x ¦ x <- xs ]
+   |                               ^^
+Failed, no modules loaded.
+2022-07-14 19:09:34.778068513
+>>> :e
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int c = ord c - ord 'a'
+   7  
+   8  int2let :: Int -> Char
+   9  int2let n = chr (ord 'a' + n)
+  10  
+  11  shift :: Int -> (Char -> Char)
+  12  shift n c 
+  13    | isLower c = int2let ((let2int c + n) `mod` 26)
+  14    | otherwise = c
+  15  
+  16  encode :: Int -> (string -> string)
+  17  encode n xs = [ shift n x ¦ x <- xs ]
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:17:31: error:
+    parse error on input ‘<-’
+    Perhaps this statement should be within a 'do' block?
+   |
+17 | encode n xs = [ shift n x ¦ x <- xs ]
+   |                               ^^
+Failed, no modules loaded.
+2022-07-14 19:10:03.205006018
+>>> :e
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int c = ord c - ord 'a'
+   7  
+   8  int2let :: Int -> Char
+   9  int2let n = chr (ord 'a' + n)
+  10  
+  11  shift :: Int -> (Char -> Char)
+  12  shift n c 
+  13    | isLower c = int2let ((let2int c + n) `mod` 26)
+  14    | otherwise = c
+  15  
+  16  encode :: Int -> (string -> string)
+  17  encode n xs = [ shift n x ¦ x < - xs ]
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:17:25: error: Variable not in scope: x :: Char
+   |
+17 | encode n xs = [ shift n x ¦ x < - xs ]
+   |                         ^
+
+src/Caesar.hs:17:27: error:
+    Variable not in scope: (¦) :: Char -> Bool -> a0
+   |
+17 | encode n xs = [ shift n x ¦ x < - xs ]
+   |                           ^
+
+src/Caesar.hs:17:29: error: Variable not in scope: x
+   |
+17 | encode n xs = [ shift n x ¦ x < - xs ]
+   |                             ^
+Failed, no modules loaded.
+2022-07-14 19:10:21.637680602
+>>> :e
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int c = ord c - ord 'a'
+   7  
+   8  int2let :: Int -> Char
+   9  int2let n = chr (ord 'a' + n)
+  10  
+  11  shift :: Int -> (Char -> Char)
+  12  shift n c 
+  13    | isLower c = int2let ((let2int c + n) `mod` 26)
+  14    | otherwise = c
+  15  
+  16  encode :: Int -> (string -> string)
+  17  encode n xs = [ shift n x ¦ x  < - xs ]
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:17:25: error: Variable not in scope: x :: Char
+   |
+17 | encode n xs = [ shift n x ¦ x  < - xs ]
+   |                         ^
+
+src/Caesar.hs:17:27: error:
+    Variable not in scope: (¦) :: Char -> Bool -> a0
+   |
+17 | encode n xs = [ shift n x ¦ x  < - xs ]
+   |                           ^
+
+src/Caesar.hs:17:29: error: Variable not in scope: x
+   |
+17 | encode n xs = [ shift n x ¦ x  < - xs ]
+   |                             ^
+Failed, no modules loaded.
+2022-07-14 19:10:33.103745965
+>>> :e
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int c = ord c - ord 'a'
+   7  
+   8  int2let :: Int -> Char
+   9  int2let n = chr (ord 'a' + n)
+  10  
+  11  shift :: Int -> (Char -> Char)
+  12  shift n c 
+  13    | isLower c = int2let ((let2int c + n) `mod` 26)
+  14    | otherwise = c
+  15  
+  16  encode :: Int -> (string -> string)
+  17  encode n xs = [ shift n x ¦ x < - xs ]
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:17:25: error: Variable not in scope: x :: Char
+   |
+17 | encode n xs = [ shift n x ¦ x < - xs ]
+   |                         ^
+
+src/Caesar.hs:17:27: error:
+    Variable not in scope: (¦) :: Char -> Bool -> a0
+   |
+17 | encode n xs = [ shift n x ¦ x < - xs ]
+   |                           ^
+
+src/Caesar.hs:17:29: error: Variable not in scope: x
+   |
+17 | encode n xs = [ shift n x ¦ x < - xs ]
+   |                             ^
+Failed, no modules loaded.
+2022-07-14 19:10:53.611288954
+>>> :e
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int c = ord c - ord 'a'
+   7  
+   8  int2let :: Int -> Char
+   9  int2let n = chr (ord 'a' + n)
+  10  
+  11  shift :: Int -> (Char -> Char)
+  12  shift n c 
+  13    | isLower c = int2let ((let2int c + n) `mod` 26)
+  14    | otherwise = c
+  15  
+  16  encode :: Int -> (string -> string)
+  17  encode n xs = [ shift n x ¦x < - xs ]
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:17:25: error: Variable not in scope: x :: Char
+   |
+17 | encode n xs = [ shift n x ¦x < - xs ]
+   |                         ^
+
+src/Caesar.hs:17:27: error:
+    Variable not in scope: (¦) :: Char -> Bool -> a0
+   |
+17 | encode n xs = [ shift n x ¦x < - xs ]
+   |                           ^
+
+src/Caesar.hs:17:28: error: Variable not in scope: x
+   |
+17 | encode n xs = [ shift n x ¦x < - xs ]
+   |                            ^
+Failed, no modules loaded.
+2022-07-14 19:11:03.758336431
+>>> :e
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int c = ord c - ord 'a'
+   7  
+   8  int2let :: Int -> Char
+   9  int2let n = chr (ord 'a' + n)
+  10  
+  11  shift :: Int -> (Char -> Char)
+  12  shift n c 
+  13    | isLower c = int2let ((let2int c + n) `mod` 26)
+  14    | otherwise = c
+  15  
+  16  encode :: Int -> (string -> string)
+  17  encode n xs = [ shift n x ¦ x < - xs ]
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:17:25: error: Variable not in scope: x :: Char
+   |
+17 | encode n xs = [ shift n x ¦ x < - xs ]
+   |                         ^
+
+src/Caesar.hs:17:27: error:
+    Variable not in scope: (¦) :: Char -> Bool -> a0
+   |
+17 | encode n xs = [ shift n x ¦ x < - xs ]
+   |                           ^
+
+src/Caesar.hs:17:29: error: Variable not in scope: x
+   |
+17 | encode n xs = [ shift n x ¦ x < - xs ]
+   |                             ^
+Failed, no modules loaded.
+2022-07-14 19:11:12.083307236
+>>> :e
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int c = ord c - ord 'a'
+   7  
+   8  int2let :: Int -> Char
+   9  int2let n = chr (ord 'a' + n)
+  10  
+  11  shift :: Int -> (Char -> Char)
+  12  shift n c 
+  13    | isLower c = int2let ((let2int c + n) `mod` 26)
+  14    | otherwise = c
+  15  
+  16  encode :: Int -> (string -> string)
+  17  encode n xs = [ shift n x ¦ x <- xs ]
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:17:31: error:
+    parse error on input ‘<-’
+    Perhaps this statement should be within a 'do' block?
+   |
+17 | encode n xs = [ shift n x ¦ x <- xs ]
+   |                               ^^
+Failed, no modules loaded.
+2022-07-14 19:11:22.751539395
+>>> :e
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int c = ord c - ord 'a'
+   7  
+   8  int2let :: Int -> Char
+   9  int2let n = chr (ord 'a' + n)
+  10  
+  11  shift :: Int -> (Char -> Char)
+  12  shift n c 
+  13    | isLower c = int2let ((let2int c + n) `mod` 26)
+  14    | otherwise = c
+  15  
+  16  encode :: Int -> (String -> String)
+  17  encode n xs = [ shift n x ¦ x <- xs ]
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:17:31: error:
+    parse error on input ‘<-’
+    Perhaps this statement should be within a 'do' block?
+   |
+17 | encode n xs = [ shift n x ¦ x <- xs ]
+   |                               ^^
+Failed, no modules loaded.
+2022-07-14 19:12:19.393766074
+>>> :e
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int c = ord c - ord 'a'
+   7  
+   8  int2let :: Int -> Char
+   9  int2let n = chr (ord 'a' + n)
+  10  
+  11  shift :: Int -> (Char -> Char)
+  12  shift n c 
+  13    | isLower c = int2let ((let2int c + n) `mod` 26)
+  14    | otherwise = c
+  15  
+  16  encode :: Int -> (String -> String)
+  17  encode n xs = [shift n x ¦ x <- xs ]
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:17:30: error:
+    parse error on input ‘<-’
+    Perhaps this statement should be within a 'do' block?
+   |
+17 | encode n xs = [shift n x ¦ x <- xs ]
+   |                              ^^
+Failed, no modules loaded.
+2022-07-14 19:12:50.713107238
+>>> 
+2022-07-14 19:12:52.2988937
+>>> :e
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int c = ord c - ord 'a'
+   7  
+   8  int2let :: Int -> Char
+   9  int2let n = chr (ord 'a' + n)
+  10  
+  11  shift :: Int -> (Char -> Char)
+  12  shift n c 
+  13    | isLower c = int2let ((let2int c + n) `mod` 26)
+  14    | otherwise = c
+  15  
+  16  encode :: Int -> (String -> String)
+  17  encode n xs = [shift n x ¦ x <-xs ]
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:17:30: error:
+    parse error on input ‘<-’
+    Perhaps this statement should be within a 'do' block?
+   |
+17 | encode n xs = [shift n x ¦ x <-xs ]
+   |                              ^^
+Failed, no modules loaded.
+2022-07-14 19:14:24.83280393
+>>> :e
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int c = ord c - ord 'a'
+   7  
+   8  int2let :: Int -> Char
+   9  int2let n = chr (ord 'a' + n)
+  10  
+  11  shift :: Int -> (Char -> Char)
+  12  shift n c 
+  13    | isLower c = int2let ((let2int c + n) `mod` 26)
+  14    | otherwise = c
+  15  
+  16  encode :: Int -> (String -> String)
+  17  encode n xs = [shift n x ¦ x <- xs ]
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:17:30: error:
+    parse error on input ‘<-’
+    Perhaps this statement should be within a 'do' block?
+   |
+17 | encode n xs = [shift n x ¦ x <- xs ]
+   |                              ^^
+Failed, no modules loaded.
+2022-07-14 19:14:30.5682618
+>>> :e
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int c = ord c - ord 'a'
+   7  
+   8  int2let :: Int -> Char
+   9  int2let n = chr (ord 'a' + n)
+  10  
+  11  shift :: Int -> (Char -> Char)
+  12  shift n c 
+  13    | isLower c = int2let ((let2int c + n) `mod` 26)
+  14    | otherwise = c
+  15  
+  16  encode :: Int -> (String -> String)
+  17  encode n xs = [shift n x ¦ x <- xs ]
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:17:30: error:
+    parse error on input ‘<-’
+    Perhaps this statement should be within a 'do' block?
+   |
+17 | encode n xs = [shift n x ¦ x <- xs ]
+   |                              ^^
+Failed, no modules loaded.
+2022-07-14 19:18:08.919163899
+>>> :e
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int c = ord c - ord 'a'
+   7  
+   8  int2let :: Int -> Char
+   9  int2let n = chr (ord 'a' + n)
+  10  
+  11  shift :: Int -> (Char -> Char)
+  12  shift n c 
+  13    | isLower c = int2let ((let2int c + n) `mod` 26)
+  14    | otherwise = c
+  15  
+  16  encode :: Int -> (String -> String)
+  17  encode n xs = [ shift n x ¦ x <- xs ]
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:17:31: error:
+    parse error on input ‘<-’
+    Perhaps this statement should be within a 'do' block?
+   |
+17 | encode n xs = [ shift n x ¦ x <- xs ]
+   |                               ^^
+Failed, no modules loaded.
+2022-07-14 19:39:33.656004418
+>>> :e
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int c = ord c - ord 'a'
+   7  
+   8  int2let :: Int -> Char
+   9  int2let n = chr (ord 'a' + n)
+  10  
+  11  shift :: Int -> (Char -> Char)
+  12  shift n c 
+  13    | isLower c = int2let ((let2int c + n) `mod` 26)
+  14    | otherwise = c
+  15  
+  16  encode :: Int -> (String -> String)
+  17  encode n xs = [ shift n x | x <- xs]
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+Ok, one module loaded.
+2022-07-14 19:49:10.304528098
+>>> encode 3 "haskell is fun"
+"kdvnhoo lv ixq"
+2022-07-14 19:51:17.996912472
+>>> it
+"kdvnhoo lv ixq"
+2022-07-14 19:52:41.88818364
+>>> encode (-3) it
+"haskell is fun"
+2022-07-14 19:52:55.728084123
+>>> :e
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int c = ord c - ord 'a'
+   7  
+   8  int2let :: Int -> Char
+   9  int2let n = chr (ord 'a' + n)
+  10  
+  11  shift :: Int -> (Char -> Char)
+  12  shift n c 
+  13    | isLower c = int2let ((let2int c + n) `mod` 26)
+  14    | otherwise = c
+  15  
+  16  encode :: Int -> (String -> String)
+  17  encode n xs = [ shift n x | x <- xs]
+  18  
+  19  table :: [Float]
+  20  table = [8.1, 1.5, 2.8, 4.2, 12.7, 2.2, 2.0, 6.1, 7.0
+  21          ,0.2, 0.8, 4.0, 2.4,  6.7, 7.5, 1.9, 0.1, 6.8
+  22          ,6.3, 9.0, 2.8, 1.0,  2.4, 0.2, 2.0, 0.1
+  23          ]
+  24                  
+  25  
+  26  
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+Ok, one module loaded.
+2022-07-14 19:59:16.252999243
+>>> length table 
+26
+2022-07-14 19:59:53.906209897
+>>> :e
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int c = ord c - ord 'a'
+   7  
+   8  int2let :: Int -> Char
+   9  int2let n = chr (ord 'a' + n)
+  10  
+  11  shift :: Int -> (Char -> Char)
+  12  shift n c 
+  13    | isLower c = int2let ((let2int c + n) `mod` 26)
+  14    | otherwise = c
+  15  
+  16  encode :: Int -> (String -> String)
+  17  encode n xs = [ shift n x | x <- xs]
+  18  
+  19  table :: [Float]
+  20  table = [8.1, 1.5, 2.8, 4.2, 12.7, 2.2, 2.0, 6.1, 7.0
+  21          ,0.2, 0.8, 4.0, 2.4,  6.7, 7.5, 1.9, 0.1, 6.8
+  22          ,6.3, 9.0, 2.8, 1.0,  2.4, 0.2, 2.0, 0.1
+  23          ]
+  24  
+  25  percent :: Int -> Float
+  26  percent n m = n / m * 100
+  27  
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:26:1: error:
+    • Couldn't match expected type ‘Float’
+                  with actual type ‘Int -> Int’
+    • The equation(s) for ‘percent’ have two value arguments,
+        but its type ‘Int -> Float’ has only one
+   |
+26 | percent n m = n / m * 100
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^
+Failed, no modules loaded.
+2022-07-14 20:01:53.013814204
+>>> :e
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int c = ord c - ord 'a'
+   7  
+   8  int2let :: Int -> Char
+   9  int2let n = chr (ord 'a' + n)
+  10  
+  11  shift :: Int -> (Char -> Char)
+  12  shift n c 
+  13    | isLower c = int2let ((let2int c + n) `mod` 26)
+  14    | otherwise = c
+  15  
+  16  encode :: Int -> (String -> String)
+  17  encode n xs = [ shift n x | x <- xs]
+  18  
+  19  table :: [Float]
+  20  table = [8.1, 1.5, 2.8, 4.2, 12.7, 2.2, 2.0, 6.1, 7.0
+  21          ,0.2, 0.8, 4.0, 2.4,  6.7, 7.5, 1.9, 0.1, 6.8
+  22          ,6.3, 9.0, 2.8, 1.0,  2.4, 0.2, 2.0, 0.1
+  23          ]
+  24  
+  25  percent :: Int -> Int -> Float
+  26  percent n m = n / m * 100
+  27  
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:26:15: error:
+    • Couldn't match expected type ‘Float’ with actual type ‘Int’
+    • In the expression: n / m * 100
+      In an equation for ‘percent’: percent n m = n / m * 100
+   |
+26 | percent n m = n / m * 100
+   |               ^^^^^^^^^^^
+Failed, no modules loaded.
+2022-07-14 20:02:27.590744676
+>>> :e
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int c = ord c - ord 'a'
+   7  
+   8  int2let :: Int -> Char
+   9  int2let n = chr (ord 'a' + n)
+  10  
+  11  shift :: Int -> (Char -> Char)
+  12  shift n c 
+  13    | isLower c = int2let ((let2int c + n) `mod` 26)
+  14    | otherwise = c
+  15  
+  16  encode :: Int -> (String -> String)
+  17  encode n xs = [ shift n x | x <- xs]
+  18  
+  19  table :: [Float]
+  20  table = [8.1, 1.5, 2.8, 4.2, 12.7, 2.2, 2.0, 6.1, 7.0
+  21          ,0.2, 0.8, 4.0, 2.4,  6.7, 7.5, 1.9, 0.1, 6.8
+  22          ,6.3, 9.0, 2.8, 1.0,  2.4, 0.2, 2.0, 0.1
+  23          ]
+  24  
+  25  percent :: Int -> Int -> Float
+  26  percent n m = n/m * 100
+  27  
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:26:15: error:
+    • Couldn't match expected type ‘Float’ with actual type ‘Int’
+    • In the expression: n / m * 100
+      In an equation for ‘percent’: percent n m = n / m * 100
+   |
+26 | percent n m = n/m * 100
+   |               ^^^^^^^^^
+Failed, no modules loaded.
+2022-07-14 20:03:15.73635643
+>>> :e
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int c = ord c - ord 'a'
+   7  
+   8  int2let :: Int -> Char
+   9  int2let n = chr (ord 'a' + n)
+  10  
+  11  shift :: Int -> (Char -> Char)
+  12  shift n c 
+  13    | isLower c = int2let ((let2int c + n) `mod` 26)
+  14    | otherwise = c
+  15  
+  16  encode :: Int -> (String -> String)
+  17  encode n xs = [ shift n x | x <- xs]
+  18  
+  19  table :: [Float]
+  20  table = [8.1, 1.5, 2.8, 4.2, 12.7, 2.2, 2.0, 6.1, 7.0
+  21          ,0.2, 0.8, 4.0, 2.4,  6.7, 7.5, 1.9, 0.1, 6.8
+  22          ,6.3, 9.0, 2.8, 1.0,  2.4, 0.2, 2.0, 0.1
+  23          ]
+  24  
+  25  percent :: Int - > Int -> Float
+  26  percent n m = n / m * 100
+  27  
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:25:16: error:
+    Operator applied to too few arguments: -
+   |
+25 | percent :: Int - > Int -> Float
+   |                ^
+Failed, no modules loaded.
+2022-07-14 20:04:09.216931526
+>>> :e
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int c = ord c - ord 'a'
+   7  
+   8  int2let :: Int -> Char
+   9  int2let n = chr (ord 'a' + n)
+  10  
+  11  shift :: Int -> (Char -> Char)
+  12  shift n c 
+  13    | isLower c = int2let ((let2int c + n) `mod` 26)
+  14    | otherwise = c
+  15  
+  16  encode :: Int -> (String -> String)
+  17  encode n xs = [ shift n x | x <- xs]
+  18  
+  19  table :: [Float]
+  20  table = [8.1, 1.5, 2.8, 4.2, 12.7, 2.2, 2.0, 6.1, 7.0
+  21          ,0.2, 0.8, 4.0, 2.4,  6.7, 7.5, 1.9, 0.1, 6.8
+  22          ,6.3, 9.0, 2.8, 1.0,  2.4, 0.2, 2.0, 0.1
+  23          ]
+  24  
+  25  percent :: Int -> Int -> Float
+  26  percent n m = n / m * 100
+  27  
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+
+src/Caesar.hs:26:15: error:
+    • Couldn't match expected type ‘Float’ with actual type ‘Int’
+    • In the expression: n / m * 100
+      In an equation for ‘percent’: percent n m = n / m * 100
+   |
+26 | percent n m = n / m * 100
+   |               ^^^^^^^^^^^
+Failed, no modules loaded.
+2022-07-14 20:05:43.613245541
+>>> :e
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int c = ord c - ord 'a'
+   7  
+   8  int2let :: Int -> Char
+   9  int2let n = chr (ord 'a' + n)
+  10  
+  11  shift :: Int -> (Char -> Char)
+  12  shift n c 
+  13    | isLower c = int2let ((let2int c + n) `mod` 26)
+  14    | otherwise = c
+  15  
+  16  encode :: Int -> (String -> String)
+  17  encode n xs = [ shift n x | x <- xs]
+  18  
+  19  table :: [Float]
+  20  table = [8.1, 1.5, 2.8, 4.2, 12.7, 2.2, 2.0, 6.1, 7.0
+  21          ,0.2, 0.8, 4.0, 2.4,  6.7, 7.5, 1.9, 0.1, 6.8
+  22          ,6.3, 9.0, 2.8, 1.0,  2.4, 0.2, 2.0, 0.1
+  23          ]
+  24  
+  25  percent :: Int -> Int -> Float
+  26  percent n m = (fromIntegral n / fromIntegral m )* 100
+  27  
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+Ok, one module loaded.
+2022-07-14 20:08:11.88149791
+>>> percent 5 15
+33.333336
+2022-07-14 20:08:25.20012109
+>>> count 's' "Mississipi"
+
+<interactive>:65:1: error:
+    Variable not in scope: count :: Char -> t0 -> t
+2022-07-14 20:14:44.090303006
+>>> :e
+   1  module Caesar where
+   2  
+   3  import Data.Char
+   4  
+   5  let2int :: Char -> Int
+   6  let2int c = ord c - ord 'a'
+   7  
+   8  int2let :: Int -> Char
+   9  int2let n = chr (ord 'a' + n)
+  10  
+  11  shift :: Int -> (Char -> Char)
+  12  shift n c 
+  13    | isLower c = int2let ((let2int c + n) `mod` 26)
+  14    | otherwise = c
+  15  
+  16  encode :: Int -> (String -> String)
+  17  encode n xs = [ shift n x | x <- xs]
+  18  
+  19  table :: [Float]
+  20  table = [8.1, 1.5, 2.8, 4.2, 12.7, 2.2, 2.0, 6.1, 7.0
+  21          ,0.2, 0.8, 4.0, 2.4,  6.7, 7.5, 1.9, 0.1, 6.8
+  22          ,6.3, 9.0, 2.8, 1.0,  2.4, 0.2, 2.0, 0.1
+  23          ]
+  24  
+  25  percent :: Int -> Int -> Float
+  26  percent n m = (fromIntegral n / fromIntegral m )* 100
+  27  
+  28  count :: Char -> (String -> Int)
+  29  count x xs = length [ x' | x' <- xs, x == x']
+  30  
+[1 of 1] Compiling Caesar           ( src/Caesar.hs, interpreted )
+Ok, one module loaded.
+2022-07-14 20:14:49.641886037
+>>> count 's' "Mississipi"
+4
+2022-07-14 20:15:06.736556273
+>>> :q
+Leaving GHCi.

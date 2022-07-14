@@ -1,3 +1,65 @@
+:q
+count 's' "Mississipi"
+:r
+count 's' "Mississipi"
+percent 5 15
+:r
+:r
+:r
+:r
+:r
+:r
+length table 
+:r
+encode (-3) it
+it
+encode 3 "haskell is fun"
+:r
+:r
+:r
+:r
+:r
+:r
+:r
+:r
+:r
+:r
+:r
+:r
+:r
+:r
+:r
+:r
+:r
+:r
+:r
+:r
+:r
+:r
+shift 3 ' '
+shift 3 'z'
+shift (-3) 'd'
+shift 3 'a'
+:r
+:r
+:r
+:r
+:r
+::r
+:r
+int2let 25 
+int2let 0
+:r
+int2let 0
+chr 97
+ord 'a'
+let2int 'z'
+let2int 'a'
+:r
+let2int 'z'
+let2int 'a'
+:l src/Caesar.hs
+:l src/Caesar.hs
 ::q
 ord 'a'
 ord 'A'
@@ -36,10 +98,3 @@ l src/
 [ x `divMod` 2 | x <- [1 .. 5] ]
 [ x `divMod` 2 | x < [1 .. 5] ]
 [ x `div` 2 | x < [1 .. 5] ]
-[ x * 2 | x <- [1 .. 5] ]
-map (^2) [1..5]
-[ x ^ 2 | x <- [1 .. 5] ]
-:q
-putStrLn it
-['あ' .. 'ん']
-:q
